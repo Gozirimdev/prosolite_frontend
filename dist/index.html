@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosolite Courses</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-B2zfvg2T.css">
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <div class="loader fixed inset-0 flex items-center justify-center bg-linear-to-br from-blue-500 to-purple-600 text-white z-50" id="page-loader">
+      <div class="text-center">
+        <div class="spinner w-14 h-14 border-4 border-white border-t-white rounded-full animate-spin mx-auto"></div>
+        <div class="loader-text font-bold mt-3 ">PROSOLITE</div>
+      </div>
+    </div>
+    <header class="site-header bg-white shadow-sm sticky top-0 z-40">
+      <nav class="navbar max-w-6xl mx-auto px-4 sm:px-5 py-3 sm:py-4 flex items-center justify-between">
+        
+          <span class="font-bold text-base sm:text-lg text-purple-600  sm:inline course-title">Prosolite</span>
+        </div>
+        <button type="button" class="nav-toggle flex md:hidden w-10 h-10 rounded-lg items-center justify-center cursor-pointer hover:bg-gray-100 transition" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger block relative w-5 h-0.5 bg-purple-600 before:content-[''] before:absolute before:left-0 before:w-5 before:h-0.5 before:bg-purple-600 before:-top-1.5 after:content-[''] after:absolute after:left-0 after:w-5 after:h-0.5 after:bg-purple-600 after:top-1.5 transition-all duration-300"></span>
+        </button>
+        <ul class="nav-links fixed md:static top-0 right-0 h-screen md:h-auto w-80 md:w-auto flex flex-col md:flex-row list-none gap-3 md:gap-5 m-0 p-6 md:p-0 pt-20 md:pt-0 bg-white md:bg-transparent shadow-lg md:shadow-none transform translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out z-50 items-center">
+          <li><a href="#courses" class="text-gray-900 no-underline font-semibold text-base md:text-sm hover:text-purple-600 transition block py-2 md:py-0">Courses</a></li>
+          <li><a href="#about" class="text-gray-900 no-underline font-semibold text-base md:text-sm hover:text-purple-600 transition block py-2 md:py-0">About</a></li>
+          <li><a href="#contact" class="text-gray-900 no-underline font-semibold text-base md:text-sm hover:text-purple-600 transition block py-2 md:py-0">Contact</a></li>
+          <li class="md:ml-2"><a class="btn btn-primary inline-block w-full md:w-auto px-4 py-2 rounded-lg text-white font-bold text-base md:text-sm bg-blue-500 hover:bg-blue-600 transition text-center" href="#register">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero text-white py-20">
+        <div class="max-w-6xl mx-auto px-5 hero-content">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Up skill with <br/> industry-focused digital courses</h1>
+          <p class="lead text-lg opacity-95 mb-6 w-[clamp(45ch,50vw,75ch)] max-w-full ">
+            Practical, hands-on training in web development, data analysis, video-editing and design built to get you job-ready.
+          </p>
+          <div class="hero-ctas flex gap-3 flex-col sm:flex-row">
+            <a class="btn btn-accent inline-block px-6 py-3 rounded-lg text-white font-bold bg-linear-to-r from-purple-600 to-blue-500 hover:opacity-90 transition text-center" href="#courses">Explore Courses</a>
+            <a class="btn btn-outline inline-block px-6 py-3 rounded-lg border-2 border-white text-white font-bold hover:bg-white hover:text-purple-600 transition text-center" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="intro max-w-6xl mx-auto px-5 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-3">Fast, focused learning that works</h2>
+        <p class="text-gray-500 mx-auto max-w-full w-[clamp(45ch,50vw,75ch)] ">
+          Our short, expert-led courses are designed to teach you the exact
+          tools and workflows employers want. Clear outcomes, practical
+          projects, and a supportive community to help you succeed.
+        </p>
+      </section>
+
+      <section id="courses" class="courses max-w-6xl mx-auto px-5 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Featured Courses</h2>
+        <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article id="course-1" class="card bg-white rounded-sm pb-6 shadow-md hover:shadow-lg transition" data-course-id="1" data-course-name="Frontend Development" data-amount="5000">
+            <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/frontend%20-B7zNKl3C.jpeg" alt="">
+           <div class="px-4">
+             <h3 class="course-title font-bold text-lg mb-3">Frontend Development</h3>
+            <p class="course-desc text-gray-500 mb-4 flex-1">
+              Build dynamic, responsive web apps using modern JavaScript
+               and React. Master HTML, CSS, and modern frontend frameworks with real-world project work.
+            </p>
+            <div class="price-row flex flex-col gap-2 mb-4">
+              <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+              
+            </div>
+            <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button>
+            </div>
+          </article>
+
+          <article id="course-2" class="card bg-white rounded-sm pb-6 shadow-md hover:shadow-lg transition" data-course-id="2" data-course-name="Backend Development" data-amount="5000">
+            <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/backend%20dev-B8kamqPd.jpeg" alt="">
+            <div class="px-4">
+            <h3 class="course-title font-bold text-lg mb-3">Backend Development</h3>
+            
+            <p class="course-desc text-gray-500 mb-4 flex-1">
+              Master server-side development with  Node.js, and databases.
+              Build scalable APIs, handle data management, and deploy production applications.
+            </p>
+            <div class="price-row flex flex-col gap-2 mb-4">
+              <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+              
+            </div>
+            <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button>
+            </div>
+          </article>
+
+          <article id="course-3" class="card bg-white rounded-sm pb-6 shadow-md hover:shadow-lg transition" data-course-id="3" data-course-name="Data Analysis" data-amount="5000">
+           
+             <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/data%20analytics-CzWFYvPX.jpeg" alt="">
+             <div class="px-4">
+            <h3 class="course-title font-bold text-lg mb-3">Data Analysis</h3>
+            <p class="course-desc text-gray-500 mb-4 flex-1">
+              Learn Python, SQL, and data visualization tools. Analyze datasets,
+              build predictive models, and turn data into actionable insights.
+            </p>
+            <div class="price-row flex flex-col gap-2 mb-4">
+              <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+              
+            </div>
+            <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button>
+            </div>
+          </article>
+
+          <article id="course-4" class="card bg-white rounded-sm pb-6 shadow-md hover:shadow-lg transition" data-course-id="4" data-course-name="Video Editing" data-amount="5000">
+            <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/video-edit-_tLrCHHV.jpeg" alt="">
+            <div class="px-4">
+                <h3 class="course-title font-bold text-lg mb-3">Video Editing</h3>
+            <p class="course-desc text-gray-500 mb-4 flex-1">
+              Master professional video editing with Adobe Premiere Pro and DaVinci Resolve.
+              Create engaging content with effects, transitions, color grading, and audio mixing.
+            </p>
+            <div class="price-row flex flex-col gap-2 mb-4">
+              <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+              
+            </div>
+            <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button>
+            </div>
+          </article>
+
+          <article id="course-5" class="card bg-white rounded-sm pb-6 shadow-md hover:shadow-lg transition" data-course-id="5" data-course-name="Mobile App Development" data-amount="5000">
+            <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/mobile-a-PBhXVv.jpeg" alt="">
+            <div class="px-4">
+                <h3 class="course-title font-bold text-lg mb-3">Mobile App Development</h3>
+                <p class="course-desc text-gray-500 mb-4 flex-1">
+                Build iOS and Android apps using React Native and Flutter. Learn mobile UI/UX,
+                state management, and deployment to app stores.
+                </p>
+                <div class="price-row flex flex-col gap-2 mb-4">
+                <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+                
+                </div>
+                <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button> 
+            </div>
+          </article>
+
+          <article id="course-6" class="card bg-white rounded-sm pb-6 px-0 shadow-md hover:shadow-lg transition" data-course-id="6" data-course-name="Graphics Design" data-amount="5000">
+            <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/graphics%20design-DGW-Sng2.jpeg" alt="">
+          <div class="px-4">
+              <h3 class="course-title font-bold text-lg mb-3">Graphics Design</h3>
+            <p class="course-desc text-gray-500 mb-4 flex-1">
+              Master Adobe Creative Suite and design principles. Create stunning visuals,
+              logos, branding materials, and digital designs for modern brands.
+            </p>
+            <div class="price-row flex flex-col gap-2 mb-4">
+              <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+              
+            </div>
+            <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button>
+            </div>
+          </article>
+
+          <article id="course-7" class="card bg-white rounded-sm pb-6 px-0 shadow-md hover:shadow-lg transition" data-course-id="7" data-course-name="Product Design" data-amount="5000">
+            <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/web%20design-CokhNXNl.jpeg" alt="">
+          <div class="px-4">
+              <h3 class="course-title font-bold text-lg mb-3">Product Design</h3>
+            <p class="course-desc text-gray-500 mb-4 flex-1">
+              Learn UX/UI design fundamentals, wireframing, and prototyping. Design user-centered
+              products using Figma, user research, and design systems.
+            </p>
+            <div class="price-row flex flex-col gap-2 mb-4">
+              <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+              
+            </div>
+            <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button>
+            </div>
+          </article>
+
+          <article id="course-8" class="card bg-white rounded-sm pb-6 shadow-md hover:shadow-lg transition" data-course-id="8" data-course-name="Cyber Security" data-amount="5000">
+            <img class="w-full h-48 object-cover rounded- mb-4" src="/assets/cyber-security-DTm08qhE.jpeg" alt="">
+            <div class="px-4">
+              <h3 class="course-title font-bold text-lg mb-3">Cyber Security</h3>
+              <p class="course-desc text-gray-500 mb-4 flex-1">
+                Master cybersecurity fundamentals, ethical hacking, and network defense.
+                Learn to protect systems, identify vulnerabilities, and secure enterprise infrastructure.
+              </p>
+              <div class="price-row flex flex-col gap-2 mb-4">
+                <div class="early-registration font-bold text-green-600">Registration: ₦5,000</div>
+                
+              </div>
+              <button class="register-btn btn btn-primary inline-block px-4 py-2 rounded-lg text-white font-bold bg-blue-500 hover:bg-blue-600 transition text-sm">Register Now</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact max-w-6xl mx-auto px-5 py-12 text-center">
+        <h2 class="text-3xl font-bold mb-3">Ready to start?</h2>
+        <p class="text-gray-500 mb-6">Questions about courses or payment plans? Reach out and we'll help you find the right fit.</p>
+        <a class="inline-block px-6 py-3 rounded-lg border-2 border-gray-300 text-gray-900 font-bold hover:border-purple-600 hover:text-purple-600 transition" href="mailto:hello@Prosolite.example">Email Us</a>
+      </section>
+    </main>
+
+    <footer class="site-footer bg-purple-600 text-white py-6">
+      <div class="max-w-6xl mx-auto px-5 footer-content flex justify-between items-center">
+        <div>© <span id="year"></span> Prosolite</div>
+        <div class="footer-links space-x-3">
+          <a href="#privacy" class="text-gray-100 hover:text-white transition">Privacy</a>
+          <span>·</span>
+          <a href="#terms" class="text-gray-100 hover:text-white transition">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Registration & Payment Modal -->
+    <div id="paymentModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div class="bg-white rounded-lg max-w-md w-full shadow-2xl">
+        <div class="bg-linear-to-r from-purple-600 to-blue-500 px-6 py-4 flex justify-between items-center">
+          <h2 class="text-2xl font-bold text-white">Register for <span id="modalCourseName"></span></h2>
+          <button type="button" id="closePaymentModal" class="text-white text-2xl font-bold cursor-pointer hover:opacity-80">&times;</button>
+        </div>
+        
+        <form id="paymentForm" class="p-6 flex flex-col gap-4 max-w-40">
+          <input type="hidden" id="courseId" name="courseId">
+          <input type="hidden" id="courseName" name="courseName">
+          <input type="hidden" id="courseAmount" name="courseAmount">
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="John Doe">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Email</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="john@example.com">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" placeholder="+234 812 345 6789">
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2">Course Amount (₦)</label>
+            <input type="number" id="amount" name="amount" readonly class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 font-bold">
+          </div>
+
+          <div id="paymentError" class="hidden bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg text-sm"></div>
+
+          <button type="submit" id="payNowBtn" class="w-full px-4 py-3 rounded-lg text-white font-bold text-lg bg-linear-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 transition cursor-pointer shadow-lg hover:shadow-xl">
+            💳 Pay Now (₦<span id="displayAmount">0</span>)
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- <script src="https://js.paystack.co/v1/inline.js"></script> -->
+    <script>
+      // Payment Modal Management
+      const paymentModal = document.getElementById('paymentModal');
+      const paymentForm = document.getElementById('paymentForm');
+      const closePaymentModal = document.getElementById('closePaymentModal');
+      const registerButtons = document.querySelectorAll('.register-btn');
+
+      // Open payment modal for specific course
+      registerButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const courseCard = button.closest('.card');
+          const courseId = courseCard.getAttribute('data-course-id');
+          const courseName = courseCard.getAttribute('data-course-name');
+          const amount = courseCard.getAttribute('data-amount');
+
+          // Set form values
+          document.getElementById('courseId').value = courseId;
+          document.getElementById('courseName').value = courseName;
+          document.getElementById('courseAmount').value = amount;
+          document.getElementById('amount').value = amount;
+          document.getElementById('modalCourseName').textContent = courseName;
+          document.getElementById('displayAmount').textContent = amount;
+
+          // Clear previous form data
+          document.getElementById('fullName').value = '';
+          document.getElementById('email').value = '';
+          document.getElementById('phone').value = '';
+          document.getElementById('paymentError').classList.add('hidden');
+
+          // Open modal
+          paymentModal.classList.remove('hidden');
+        });
+      });
+
+      // Close modal
+      closePaymentModal.addEventListener('click', () => {
+        paymentModal.classList.add('hidden');
+        paymentForm.reset();
+      });
+
+      paymentModal.addEventListener('click', (e) => {
+        if (e.target === paymentModal) {
+          paymentModal.classList.add('hidden');
+          paymentForm.reset();
+        }
+      });
+
+      // Form Submission - Initialize Paystack Payment
+      paymentForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const fullName = document.getElementById('fullName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const courseId = document.getElementById('courseId').value;
+        const courseName = document.getElementById('courseName').value;
+        const amount = parseInt(document.getElementById('courseAmount').value);
+
+        if (!fullName || !email || !phone) {
+          showPaymentError('Please fill in all fields');
+          return;
+        }
+
+        const payNowBtn = document.getElementById('payNowBtn');
+        const errorDiv = document.getElementById('paymentError');
+
+        payNowBtn.disabled = true;
+        errorDiv.classList.add('hidden');
+
+        // Initialize Paystack Payment
+        const handler = PaystackPop.setup({
+          key: 'pk_live_52254d2a49fb54257d93bf4a9fb2a47deb1e7e30', // Your Paystack public key
+          email: email,
+          amount: amount * 100, // Paystack uses kobo
+          currency: 'NGN',
+          ref: `${courseId}-${Date.now()}`, // Unique reference with course ID
+          onClose: function() {
+            payNowBtn.disabled = false;
+          },
+          onSuccess: function(response) {
+            // Payment successful - you can verify on your backend
+            showPaymentSuccess(fullName, courseName, amount, response.reference, courseId);
+          }
+        });
+
+        handler.openIframe();
+      });
+
+      function showPaymentError(message) {
+        const errorDiv = document.getElementById('paymentError');
+        errorDiv.textContent = message;
+        errorDiv.classList.remove('hidden');
+      }
+
+      function showPaymentSuccess(name, course, amount, reference, courseId) {
+        const modal = paymentModal;
+        const form = paymentForm;
+        
+        // Show success message
+        alert(`✅ Payment Successful!\n\nName: ${name}\nCourse: ${course}\nAmount: ₦${amount}\nReference: ${reference}\nCourse ID: ${courseId}\n\nThank you for registering!`);
+        
+        // Close modal and reset
+        modal.classList.add('hidden');
+        form.reset();
+      }
+
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Hide loader with slide animation after full load
+      window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
+        const loader = document.getElementById("page-loader");
+        setTimeout(function () {
+          if (loader && loader.parentNode)
+            loader.parentNode.removeChild(loader);
+        }, 800);
+      });
+
+      // Scroll-triggered animations using Intersection Observer
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.site-header, .hero, .intro, .courses, .contact, .card').forEach(function(el) {
+        observer.observe(el);
+      });
+
+      // Mobile nav toggle
+      (function () {
+        const navToggle = document.querySelector(".nav-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (!navToggle) return;
+        
+        navToggle.addEventListener("click", function () {
+          const expanded = this.getAttribute("aria-expanded") === "true";
+          this.setAttribute("aria-expanded", String(!expanded));
+          this.classList.toggle("open");
+          document.body.classList.toggle("nav-open");
+        });
+
+        // Close nav on link click
+        document.querySelectorAll(".nav-links a").forEach(function (a) {
+          a.addEventListener("click", function () {
+            document.body.classList.remove("nav-open");
+            navToggle.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+
+        // Close nav on outside click
+        document.addEventListener("click", function(e) {
+          const isNavOpen = document.body.classList.contains("nav-open");
+          const isClickInNav = navLinks && navLinks.contains(e.target);
+          const isClickOnToggle = navToggle && navToggle.contains(e.target);
+          
+          if (isNavOpen && !isClickInNav && !isClickOnToggle) {
+            document.body.classList.remove("nav-open");
+            navToggle.classList.remove("open");
+            navToggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
+     
+    </script>
+  </body>
+</html>

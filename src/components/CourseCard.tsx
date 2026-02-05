@@ -9,7 +9,18 @@ interface CourseCardProps {
   students: string;
   rating: number;
   image: string;
+  tool?: string[];
   delay?: number;
+  onView?: (course: {
+    title: string;
+    description: string;
+    category: string;
+    duration: string;
+    students: string;
+    rating: number;
+    image: string;
+    tool?: string[];
+  }) => void;
 }
 
 const CourseCard = ({
@@ -20,7 +31,9 @@ const CourseCard = ({
   students,
   rating,
   image,
+  tool,
   delay = 0,
+  onView,
 }: CourseCardProps) => {
   return (
     <div
@@ -72,7 +85,12 @@ const CourseCard = ({
         </div>
 
         {/* CTA */}
-        <Button variant="glass" size="sm" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+        <Button
+          variant="glass"
+          size="sm"
+          className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+          onClick={() => onView?.({ title, description, category, duration, students, rating, image, tool })}
+        >
           View Course
         </Button>
       </div>

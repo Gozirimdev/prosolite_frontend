@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -14,16 +14,33 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! We'll get back to you soon.");
+    
+    // Create WhatsApp message
+    const whatsappNumber = "2347083919660"; // +234 708 391 9660 without + sign
+    const message = `Hello! My name is ${formData.name}.\n\nEmail: ${formData.email}\n\nMessage: ${formData.message}`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, "_blank");
+    
+    // Clear form
     setFormData({ name: "", email: "", message: "" });
+    toast.success("Opening WhatsApp...");
   };
 
   const contactInfo = [
     {
+      icon: MessageCircle,
+      label: "WhatsApp",
+      value: "+234 708 391 9660",
+      href: "https://wa.me/2347083919660",
+    },
+    {
       icon: Mail,
       label: "Email",
-      value: "hello@prosolite.com",
-      href: "mailto:hello@prosolite.com",
+      value: "prosolite@gmail.com",
+      href: "mailto:prosolite@gmail.com",
     },
     {
       icon: Phone,
@@ -34,7 +51,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Lagos, Nigeria",
+      value: "Awka, Nigeria",
       href: "#",
     },
   ];
@@ -48,7 +65,7 @@ const ContactSection = () => {
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute top-1/2 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-0">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 block">

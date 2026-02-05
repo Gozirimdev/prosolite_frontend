@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
+import { useRegistration } from "./RegistrationModal";
 import prosolitelogo from "@/assets/prosolite-logo.jpeg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { setOpen } = useRegistration();
 
   const navLinks = [
     { name: "Home", href: "#home" },
@@ -15,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-background/80 border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-background/80 border-b border-border/50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -46,7 +48,7 @@ const Navbar = () => {
           {/* CTA Button & Theme Toggle */}
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" onClick={() => setOpen(true)}>
               Register
             </Button>
           </div>
@@ -78,7 +80,7 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button variant="hero" className="w-full">
+                <Button variant="hero" className="w-full" onClick={() => setOpen(true)}>
                   Register
                 </Button>
               </div>
