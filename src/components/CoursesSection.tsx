@@ -14,7 +14,7 @@ const courses = [
     duration: "12 weeks",
     students: "1.2K",
     rating: 4.9,
-    image: "/image/video-edit.jpeg",
+    image: "image/video-edit.jpeg",
     tool:["adobe premiere pro","after effects","davinci resolve","capcut","filmora","final cut pro"]
   },
   {
@@ -24,7 +24,7 @@ const courses = [
     duration: "12 weeks",
     students: "1.6K",
     rating: 4.8,
-    image: "/image/mobile.jpeg",
+    image: "image/mobile.jpeg",
     tool:["javascript","react native","jsx","react native paper"]
   },
   {
@@ -34,7 +34,7 @@ const courses = [
     duration: "12 weeks",
     students: "2.0K",
     rating: 4.9,
-    image: "/image/frontend .jpeg",
+    image: "image/frontend .jpeg",
     tool:["html","css","javascript","react","tailwind css"]
   },
   {
@@ -44,7 +44,7 @@ const courses = [
     duration: "12 weeks",
     students: "1.4K",
     rating: 4.7,
-    image: "/image/backend dev.jpeg",
+    image: "image/backend dev.jpeg",
     tool:["javascript","nodejs","expressjs","mongodb","sql","postgresql"]
   },
   {
@@ -63,7 +63,7 @@ const courses = [
     duration: "12 weeks",
     students: "1.1K",
     rating: 4.6,
-    image: "/image/graphics design.jpeg",
+    image: "image/graphics design.jpeg",
     tool:["adobe illustrator","photoshop","figma","canva","corel draw","gimp"]
   },
   {
@@ -73,7 +73,7 @@ const courses = [
     duration: "12 weeks",
     students: "980",
     rating: 4.7,
-    image: "/image/cyber-security.jpeg",
+    image: "image/cyber-security.jpeg",
     tool:["network security","ethical hacking","penetration testing","cybersecurity fundamentals"]
   },
 ];
