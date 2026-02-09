@@ -7,6 +7,7 @@ import CoursePopup from "@/components/Coursepopup";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useRegistration } from "@/components/RegistrationModal";
+import { useEffect } from "react";
 
 const courses = [
   {
@@ -86,6 +87,11 @@ const AllCourses = () => {
   const [open, setOpen] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState<any | null>(null);
   const { paystackOpen } = useRegistration();
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   const handleView = (course: any) => {
     setSelectedCourse(course);

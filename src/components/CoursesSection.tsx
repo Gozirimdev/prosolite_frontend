@@ -51,10 +51,11 @@ const courses = [
     title: "Data Analytics",
     description: "Learn Python, SQL, and data visualization tools to extract insights from complex datasets.",
     category: "Data",
-    duration: "8 weeks",
+    duration: "12 weeks",
     students: "1.8K",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
+    tool: ["Microsoft Excel", "SQL (MySQL)", "Power BI"],
   },
   {
     title: "Graphics Design",
@@ -64,7 +65,7 @@ const courses = [
     students: "1.1K",
     rating: 4.6,
     image: "image/graphics design.jpeg",
-    tool:["adobe illustrator","photoshop","figma","canva","corel draw","gimp"]
+    tool:["adobe illustrator","photoshop","canva","corel draw",]
   },
   {
     title: "Cyber Security",
@@ -75,6 +76,16 @@ const courses = [
     rating: 4.7,
     image: "image/cyber-security.jpeg",
     tool:["network security","ethical hacking","penetration testing","cybersecurity fundamentals"]
+  },
+  {
+    title: "Product Design",
+    description: "Learn to design user-centered products using Figma, prototyping, and user research methodologies.",
+    category: "Design",
+    duration: "12 weeks",
+    students: "1.3K",
+    rating: 4.8,
+    image: "image/product-design.jpeg",
+    tool:["Figma","Adobe XD","Prototyping","User Research","Wireframing"]
   },
 ];
 
@@ -100,6 +111,16 @@ const CoursesSection = () => {
     setSelectedCourse(course);
     setOpen(true);
   };
+
+  const handleViewAllCourses = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => navigate("/all-courses"), 300);
+  };
+
+  // Debug: log courses rendered
+  useEffect(() => {
+    console.log("CoursesSection - courses:", courses.map((c) => c.title));
+  }, []);
 
   return (
     <section id="courses" className="py-24 relative">
@@ -129,7 +150,7 @@ const CoursesSection = () => {
 
         {/* View All Button */}
         <div className="text-center">
-          <Button variant="glass" size="lg" className="group" onClick={() => navigate("/all-courses")}>
+          <Button variant="glass" size="lg" className="group" onClick={handleViewAllCourses}>
             View All Courses
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>

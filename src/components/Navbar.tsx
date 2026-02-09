@@ -1,27 +1,43 @@
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import { useRegistration } from "./RegistrationModal";
+import { useNavigate } from "react-router-dom";
 import prosolitelogo from "@/assets/prosolite-logo.jpeg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   const { setOpen } = useRegistration();
 
   const navLinks = [
     { name: "Home", href: "#home" },
     { name: "Courses", href: "#courses" },
-    { name: "About", href: "#about" },
+    // { name: "About", href: "#about" },
     { name: "Contact", href: "#contact" },
   ];
+
+  const handleScroll = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const id = href.startsWith("#") ? href.slice(1) : href;
+    const el = document.getElementById(id) || document.querySelector(href);
+    if (el) {
+      (el as HTMLElement).scrollIntoView({ behavior: "smooth", block: "start" });
+      setIsOpen(false);
+    } else {
+      // If element doesn't exist, navigate to home page with hash
+      navigate(`/${href}`);
+      setIsOpen(false);
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-40 backdrop-blur-xl bg-background/80 border-b border-border/50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <a href="#home" className="flex items-center gap-3 group cursor-pointer" onClick={(e) => handleScroll(e, "#home")}>
             <img 
               src={prosolitelogo} 
               alt="Prosolite Logo" 
@@ -39,6 +55,7 @@ const Navbar = () => {
                 key={link.name}
                 href={link.href}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-300 text-sm font-medium"
+                onClick={(e) => handleScroll(e, link.href)}
               >
                 {link.name}
               </a>
@@ -74,7 +91,7 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-300 py-2 text-lg"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleScroll(e, link.href)}
                 >
                   {link.name}
                 </a>

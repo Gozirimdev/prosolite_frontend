@@ -1,4 +1,5 @@
-import { Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Twitter, Facebook } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 import prosolitelogo from "@/assets/prosolite-logo.jpeg";
 
 const Footer = () => {
@@ -11,10 +12,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Youtube, href: "#", label: "YouTube" },
+    { icon: Twitter, href: "https://x.com/prosolite/", label: "Twitter" },
+    { icon: Facebook, href: "https://facebook.com/61552082730754/", label: "Facebook" },
+    { icon: FaTiktok, href: "https://www.tiktok.com/@prosolite", label: "TikTok" },
   ];
 
   return (
